@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    background-color: #1b1b1b;
+    font-family: "Caveat", cursive;
+    font-size: 23px;
+}
+
+button{
+    font-family: "Caveat", cursive;
+    font-weight: bolder;
+}
+
+#container{
+    height: 90vh;
+    #main-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        #header{
+            background-color: #c6c6c636;
+            border-radius: 30px;
+            color: white;
+            box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.3);
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            margin-bottom: 10px;
+            
+        }
+        #grid-container{
+            background-color: #f0bd4f;
+            padding: 50px;
+            border: #4d4d4d solid 12px;
+            border-radius: 30px;
+            box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.9);
+            width: 60%;
+            .squares{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                width: 70%;
+                margin: auto;
+            }
+
+            .square{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: solid 2px;
+                transition:all 0.3s;
+                height: 50px;
+                width: 100%;
+
+
+            }
+            .square:hover{
+                background-color: #3f3f3f4a;
+            }
+        }
+
+        .footer{
+            #reset-btn{
+                font-size: 25px;
+                padding: 4px 25px;
+                border-radius: 30px;
+                border: none;
+                box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.3);
+                color: white;
+                background: rgb(84 60 172);
+                cursor: pointer;
+                transition: all 0.3s;
+                margin-top: 10px;
+            }
+            #reset-btn:hover{
+                box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.7);
+                background: rgb(137 105 240);
+
+            }
+        }
+
+      
+
+    }
+
+
+}
